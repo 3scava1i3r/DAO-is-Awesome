@@ -1,0 +1,30 @@
+{
+  "name": "sahayak",
+  "version": "1.0.0",
+  "description": "Medical record keeping using ethereum and Skynet",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --open",
+    "build": "webpack --config= web.config.js",
+    "halt": "webpack --config = web.config.js --open"
+  },
+  "author": "Hritwik Tripathi",
+  "license": "ISC",
+  "dependencies": {
+    "ganache-cli": "^6.10.1",
+    "path-browserify": "^1.0.1",
+    "skynet-js": "^0.1.0",
+    "web3": "^1.2.11"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.0.3",
+    "web3-loader": "^1.1.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

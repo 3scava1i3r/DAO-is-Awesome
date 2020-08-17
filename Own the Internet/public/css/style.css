@@ -1,0 +1,286 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 1vw;
+  line-height: 1.6;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.header .logo {
+  position: relative;
+  pointer-events: auto;
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 3rem;
+  width: auto;
+  overflow: hidden;
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.header .logo-faq {
+  position: relative;
+  pointer-events: auto;
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 3rem;
+  width: auto;
+  overflow: hidden;
+  font-size: 2rem;
+  color: #000;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.header nav {
+  pointer-events: auto;
+  position: absolute;
+  top: 3rem;
+  right: 5%;
+  color: inherit;
+}
+
+.header nav .header_menu {
+  position: relative;
+  overflow: hidden;
+}
+
+.header nav a {
+  font-size: 1rem;
+  padding: .1em .55em;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.text{
+  width: 75%;
+  margin: 0 auto;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.text-Content{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.home_intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.video-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home_intro_videos {
+  width: inherit;
+  height: inherit;
+  opacity: 0.9;
+}
+
+.home_intro_videos .intro-loop {
+  z-index: 1;
+}
+
+.prllx {
+  overflow: hidden
+}
+
+.home_titles {
+  z-index: 2;
+  font-family: Circular Pro Medium, sans-serif;
+  position: relative;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 7%;
+  color: #d2d0cc;
+
+}
+
+.home_titles .title {
+  font-size: 4.5vw;
+  line-height: 1.2;
+}
+
+.home_titles .baseline {
+  font-size: 1vw;
+  line-height: 1.2;
+  margin-top: 1.8vw;
+  color: #d2d0cc;
+}
+
+@media (max-width: 1024px) {
+  .home_titles .baseline{
+    font-size: 2vw;
+    line-height: 1.2;
+    margin-top: 1.8vw;
+    color: #fff;
+  }
+  .home_titles .title {
+    font-size: 4.5vw;
+    line-height: 1.2;
+    color: #fff;
+  }
+}
+
+
+.input{
+ max-width:250px;
+ display:flex;
+ position: absolute;
+ top: 79%;
+ right: 3%;
+}
+
+.box{
+ max-width:250px;
+ display:flex;
+ position: absolute;
+ top: 85%;
+ right: 3%;
+
+}
+.search{
+ max-width:250px;
+ display:flex;
+ position: absolute;
+ top: 73%;
+ right: 3%;
+
+}
+
+@media (max-width: 1024px){
+  .input{
+   max-width:300px;
+   display:flex;
+   position: absolute;
+   top: 82%;
+   right: 3%;
+  }
+
+  .box{
+   max-width:300px;
+   display:flex;
+   position: absolute;
+   top: 85%;
+   right: 3%;
+
+  }
+  .search{
+   max-width:300px;
+   display:flex;
+   position: absolute;
+   top: 79%;
+   right: 3%;
+
+  }
+}
+
+#footer {
+  padding: 2% 15%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: black;
+  text-decoration-color: white;
+}
+
+.footer-text{
+  color: white;
+}
+/* ---------------------------------------Upload Button -------------------------
+.file-upload{
+  display: inline-block;
+  align-items: center;
+  font-size: 16px;
+}
+
+.file-upload_input {
+  display: none;
+}
+.file-upload_button {
+  -webkit-appearance: none;
+  background: #009879;
+  border:2px solid #00745D;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5em 0.8em;
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: progress;
+}
+
+.file-upload_button:active {
+  background: #00745d;
+}
+
+.file-upload_label{
+   max-width: 250px;
+   font-size: 0.95em;
+   text-overflow: sans-serif;
+   overflow : hidden;
+   white-space: nowrap;
+}
+--------------------------------------------upload button-------------------
+.upload-button{
+  -webkit-appearance: none;
+  background: #009879;
+  border:2px solid #00745D;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5em 0.8em;
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: progress;
+}
+------------------------------------------------ */
