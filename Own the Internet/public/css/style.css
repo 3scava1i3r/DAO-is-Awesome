@@ -72,7 +72,9 @@ body {
 }
 
 #faq {
+  background-image: url("https://i.stack.imgur.com/NEuip.jpg");
   background-color: black;
+
 }
 
 .container-faq {
@@ -246,55 +248,3 @@ body {
   font-size: 1.5rem;
 }
 
-/* ---------------------------------------Upload Button -------------------------
-.file-upload{
-  display: inline-block;
-  align-items: center;
-  font-size: 16px;
-}
-
-.file-upload_input {
-  display: none;
-}
-.file-upload_button {
-  -webkit-appearance: none;
-  background: #009879;
-  border:2px solid #00745D;
-  border-radius: 3px;
-  outline: none;
-  padding: 0.5em 0.8em;
-  margin-right: 15px;
-  color: #ffffff;
-  font-size: 1em;
-  font-family: sans-serif;
-  font-weight: bold;
-  cursor: progress;
-}
-
-.file-upload_button:active {
-  background: #00745d;
-}
-
-.file-upload_label{
-   max-width: 250px;
-   font-size: 0.95em;
-   text-overflow: sans-serif;
-   overflow : hidden;
-   white-space: nowrap;
-}
---------------------------------------------upload button-------------------
-.upload-button{
-  -webkit-appearance: none;
-  background: #009879;
-  border:2px solid #00745D;
-  border-radius: 3px;
-  outline: none;
-  padding: 0.5em 0.8em;
-  margin-right: 15px;
-  color: #ffffff;
-  font-size: 1em;
-  font-family: sans-serif;
-  font-weight: bold;
-  cursor: progress;
-}
------------------------------------------------- */
