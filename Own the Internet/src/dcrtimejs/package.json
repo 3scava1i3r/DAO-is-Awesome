@@ -1,0 +1,64 @@
+{
+  "_from": "dcrtimejs@0.0.5",
+  "_id": "dcrtimejs@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-Nr0vjddUJgXIruTxqdyQp/4V3qnpGSB3ywcL7gvQIjsX3TmSq5dLc8zA099eW2tnkfK/C72KNPLC3jZ67t3KVA==",
+  "_location": "/dcrtimejs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "dcrtimejs@0.0.5",
+    "name": "dcrtimejs",
+    "escapedName": "dcrtimejs",
+    "rawSpec": "0.0.5",
+    "saveSpec": null,
+    "fetchSpec": "0.0.5"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/dcrtimejs/-/dcrtimejs-0.0.5.tgz",
+  "_shasum": "ea0eab9b58c2fbe7652c5af8ea2be80ea13a4c52",
+  "_spec": "dcrtimejs@0.0.5",
+  "_where": "/mnt/d/Hackathon/Sahaya-karmi",
+  "author": {
+    "name": "tiagoalvesdulce"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "node-fetch": "^2.3.0"
+  },
+  "deprecated": false,
+  "description": "javascript library for dcrtime",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "esm": "^3.2.17",
+    "mocha": "^6.0.2",
+    "prettier": "^1.16.4"
+  },
+  "files": [
+    "dcrtime.js"
+  ],
+  "license": "MIT",
+  "main": "dcrtime.js",
+  "name": "dcrtimejs",
+  "peerDependencies": {
+    "crypto-js": "^3.1.9-1"
+  },
+  "scripts": {
+    "start": "node -r esm dcrtime.js",
+    "test": "mocha -r esm test/*.test.js"
+  },
+  "version": "0.0.5"
+}

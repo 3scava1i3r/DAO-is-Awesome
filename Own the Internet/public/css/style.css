@@ -45,7 +45,7 @@ body {
   width: auto;
   overflow: hidden;
   font-size: 2rem;
-  color: #000;
+  color: #fff;
   opacity: 0.9;
   text-decoration: none;
 }
@@ -71,22 +71,26 @@ body {
   text-decoration: none;
 }
 
-.text{
-  width: 75%;
-  margin: 0 auto;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
+#faq {
+  background-color: black;
 }
 
-.text-Content{
+.container-faq {
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+  top: 30%;
+}
+
+.container-faq h3, h5 {
+  color: white;
+  line-height: 2.5;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.3rem;
-  text-decoration: none;
-  font-weight: 100;
 }
 
 .home_intro {
@@ -139,7 +143,6 @@ body {
   align-items: flex-start;
   margin-left: 7%;
   color: #d2d0cc;
-
 }
 
 .home_titles .title {
@@ -155,12 +158,13 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .home_titles .baseline{
+  .home_titles .baseline {
     font-size: 2vw;
     line-height: 1.2;
     margin-top: 1.8vw;
     color: #fff;
   }
+
   .home_titles .title {
     font-size: 4.5vw;
     line-height: 1.2;
@@ -168,70 +172,80 @@ body {
   }
 }
 
-
-.input{
- max-width:250px;
- display:flex;
- position: absolute;
- top: 79%;
- right: 3%;
+.input {
+  max-width: 250px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 79%;
+  right: 3%;
 }
 
-.box{
- max-width:250px;
- display:flex;
- position: absolute;
- top: 85%;
- right: 3%;
-
-}
-.search{
- max-width:250px;
- display:flex;
- position: absolute;
- top: 73%;
- right: 3%;
-
+.box {
+  max-width: 250px;
+  display: flex;
+  position: absolute;
+  top: 85%;
+  right: 3%;
 }
 
-@media (max-width: 1024px){
-  .input{
-   max-width:300px;
-   display:flex;
-   position: absolute;
-   top: 82%;
-   right: 3%;
+.search {
+  max-width: 250px;
+  display: flex;
+  position: absolute;
+  top: 73%;
+  right: 3%;
+}
+
+@media (max-width: 1024px) {
+  .input {
+    max-width: 300px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 82%;
+    right: 3%;
   }
 
-  .box{
-   max-width:300px;
-   display:flex;
-   position: absolute;
-   top: 85%;
-   right: 3%;
-
+  .box {
+    max-width: 300px;
+    display: flex;
+    position: absolute;
+    top: 85%;
+    right: 3%;
   }
-  .search{
-   max-width:300px;
-   display:flex;
-   position: absolute;
-   top: 79%;
-   right: 3%;
 
+  .search {
+    max-width: 300px;
+    display: flex;
+    position: absolute;
+    top: 79%;
+    right: 3%;
   }
 }
 
 #footer {
-  padding: 2% 15%;
+  padding: 1% 15%;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   background-color: black;
   text-decoration-color: white;
 }
 
-.footer-text{
+.footer-text p {
   color: white;
+  margin-bottom: 5px;
 }
+
+.container-faq h3 strong {
+  color: #f2aaaa;
+}
+
+.ans {
+  color: #68b0ab;
+  font-size: 1.5rem;
+}
+
 /* ---------------------------------------Upload Button -------------------------
 .file-upload{
   display: inline-block;

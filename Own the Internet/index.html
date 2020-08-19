@@ -13,10 +13,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
   <!-- For Icons -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- Pop up -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <title>Sahayak</title>
 </head>
 
 <body>
+
   <header class="header">
     <a class="logo" href="index.html">Sahayak</a>
     <nav>
@@ -45,98 +48,36 @@
       <div class="input-group mb-3 search">
         <input type="text" class="form-control" id="Txnhash" placeholder="Transaction Hash" aria-label="Recipient's username" aria-describedby="button-addon2">
         <div class="input-group-append">
-          <button class="btn btn-secondary" type="button" onclick="initTxnSearch" id="button-addon2">Search</button>
+          <button class="btn btn-dark" type="button" id="button-addon2">Search</button>
         </div>
       </div>
 
-      <input class="form-control input" id="R_add" type="text" placeholder="Receiver's address">
 
+      <!-- <input class="form-control input" type="text" placeholder="Receiver's address"> -->
+      <button type="button" id="timeline" class="btn btn-dark btn-block input">View Transaction detail's</button>
       <div class="input-group mb-3 box">
         <div class="custom-file">
           <input type="file" class="custom-file-input" id="inputGroupFile02">
           <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
         </div>
         <div class="input-group-append">
-          <span class="input-group-text btn btn-secondary" id="inputGroupFileAddon02">Upload</span>
+          <span class="input-group-text btn btn-dark" id="inputGroupFileAddon02">Upload</span>
         </div>
       </div>
       <script type="application/javascript">
-      $('input[type="file"]').change(function(e) {
-        var fileName = e.target.files[0].name;
-        $('.custom-file-label').html(fileName);
-      });
+        $('input[type="file"]').change(function(e) {
+          var fileName = e.target.files[0].name;
+          $('.custom-file-label').html(fileName);
+        });
       </script>
     </div>
   </section>
-
+<script type="text/javaScript" src="/main.js"></script>
   <footer id="footer">
     <div class="footer-text">
       <p>Made with ❤ by Ether_bots</p>
       <p>© Copyright 2020</p>
     </div>
-    </footer>
-
-  <!-- <div class="file-upload">
-    <input class="file-upload_input" type="file" name="myfile" id="myfile" >
-    <button class="file-upload_button" type="button">Browse</button>
-    <button class="upload-button" type="button">Upload</button>
-    <span class="file-upload_label">
-      No file(s) selected
-    </span>
-
-
-    const initTxn = () => {
-      web3.eth.sendTransaction(
-        from:web3.eth.getAccounts(),
-        to:,
-        value:0,
-        data:web3.toHex({skylink})
-      )
-    }
-
-
-
-
-
-
-    Array.prototype.forEach.call(
-     document.querySelectorAll(".file-upload_button"),
-     function(button) {
-       const hiddenInput = button.parentElement.querySelector(".file-upload_input");
-       const label = button.parentElement.querySelector(".file-upload_label");
-       const defaultLabelText = "No file(s) selected";
-
-       label.textContent = defaultLabelText;
-       label.title = defaultLabelText;
-
-       button.addEventListener("click", () => {
-         hiddenInput.click();
-       });
-
-       hiddenInput.addEventListener("change", () => {
-           const Tname = hiddenInput.files[0].name;
-           console.log(hiddenInput.files);
-           label.textContent = Tname;
-           label.title = Tname;
-       });
-     });
-  </div> -->
-
-  <!--
-  <script type="module" src="../node_modules/skynet-js/src/client.js"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
--->
-
-  <!-- <script type="module" src="./public/browse.js"></script>
-  <script type="module" src="./public/upload.js"></script>
-  <script type="module" src="public/browse.js"></script>
-   -->
-   <script>
-      //  var web3 = window.web3 ? new Web3(window.web3.currentProvider) : new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
-   </script>
-   <script type="text/javaScript" src="/main.js"></script>
-</body>
+  </footer>
+  <script type="text/javaScript" src="/main.js"></script>
 </html>
-<!-- <a id="login" name="Login with Mollie" class="button" href="" target="_self" rel="nofollow">Login with Mollie</a> -->
